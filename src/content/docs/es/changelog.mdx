@@ -8,9 +8,19 @@ import Timeline from '../../../components/custom/timeline.astro';
 import TimelineEntry from '../../../components/custom/timeline-entry.astro';
 
 <Timeline>
+  <TimelineEntry
+    title="V2.2.1 Cambios"
+    date="4 de Enero del 2025">
+    **Correciones:**
+    - Se corrigio el manejo de `Message.url` en mensajes privados y provenientes de un CommandMenu.
+    - Se soliciono los problemas de compatibilidad con node18.
+    **Adiciones:**
+    - Se añadio `AnyContext.followup` un acortador para `Interaction.followup` y su respectiva solucio para comandos de mensaje.
+
+  </TimelineEntry>
   <TimelineEntry 
     title="V2.2.0 Cambios"
-    date="Sabado 28 de Diciembre de 2024"
+    date="28 de Diciembre del 2024"
   >
     **Cambios importantes:**
     - Los threads ya no forman parte de la caché principal; ahora se fusionan con los canales.
@@ -57,7 +67,7 @@ import TimelineEntry from '../../../components/custom/timeline-entry.astro';
   </TimelineEntry>
   <TimelineEntry 
     title="Cambios V2.1.0"
-    date="7 de Septiembre de 2024"
+    date="7 de Septiembre del 2024"
   >
     **Correcciones:**
     - Se maneja correctamente el estado http 429 (límite de velocidad)
@@ -93,7 +103,7 @@ import TimelineEntry from '../../../components/custom/timeline-entry.astro';
   </TimelineEntry>
   <TimelineEntry 
     title="Cambios V2.0.0"
-    date="23 de Agosto de 2024"
+    date="23 de Agosto del 2024"
   >
 
     Con esta versión, nos enorgullece anunciar que seyfert ahora no tiene dependencias, incluyendo un cliente websocket construido desde cero.

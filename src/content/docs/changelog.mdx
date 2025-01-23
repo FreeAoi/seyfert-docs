@@ -8,6 +8,16 @@ import Timeline from '../../components/custom/timeline.astro';
 import TimelineEntry from '../../components/custom/timeline-entry.astro';
 
 <Timeline>
+  <TimelineEntry
+    title="V2.2.1 Changes"
+    date="January 4, 2025">
+    **Fixed:**
+    - Fixed `Message.url` for messages outside a guild or in MenuCommands.
+    - Fixed Node18 compatibility.
+    **Additions:**
+    - Added `AnyContext.followup` shorter for `Interaction.followup` and a trick for MessageCommands.
+
+  </TimelineEntry>
   <TimelineEntry 
     title="V2.2.0 Changes"
     date="December 28, 2024"
